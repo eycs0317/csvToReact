@@ -13,7 +13,7 @@ type CategoryType =
   | "Weekend Brunch"
   | "Traditional Dessert"
 const App = () => {
-  const [language, setLanguage] = useState<LanguageType>("eng");
+  const [language, setLanguage] = useState<LanguageType>("eng"); // "tw" | "cn" | "eng";
   const [category, setCategory] = useState<CategoryType>("Dim Sum");
   // category = Cold Appetizer, Dim Sum, Soup, Wok, Hand Made Noodles / Rice Cake / Fried Rice, Weekend Brunch, Traditional Dessert
   const { csvData, error } = useFetchData(

@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Google sheet to React app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+At Google Sheet click on 'File' -> 'Share' -> 'Publish to the Web'. Under the 'Embed' select .csv file.
+Copy the link and paste it to App.tsx in the useFetchData function.
 
 ## Available Scripts
 
@@ -68,4 +69,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # csvToReact
