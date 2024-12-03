@@ -9,12 +9,12 @@ const LanguageSelect = ({ onLanguageChange }: { onLanguageChange: (lang: string)
   };
 
   return (
-    <div>
+    <div className="fixed right-5 bottom-5  flex bg-slate-700 ">
       {["eng", "cn", "tw"].map((lang) => (
         <button
           key={lang}
           onClick={() => handleClick(lang)}
-          style={{ backgroundColor: language === lang ? "#ccc" : "#fff" }}
+          className="hover:bg-red-700 py-3 px-7 text-white"
         >
           {lang === "eng" ? "English" : lang === "cn" ? "简体" : "繁體"}
         </button>

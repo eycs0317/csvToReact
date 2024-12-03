@@ -15,7 +15,7 @@ type CategoryType =
   | "Traditional Dessert"
 const App = () => {
   const [language, setLanguage] = useState<LanguageType>("eng"); // "tw" | "cn" | "eng";
-  const [category, setCategory] = useState<CategoryType>("Cold Appetizer");
+  const [category, setCategory] = useState<CategoryType>("Hand Made Noodles / Rice Cake / Fried Rice");
   // category = Cold Appetizer, Dim Sum, Soup, Wok, Hand Made Noodles / Rice Cake / Fried Rice, Weekend Brunch, Traditional Dessert
   const { csvData, error } = useFetchData(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vQbXh46Qt5x_LjOKrb2B4K5LLboWH6ORIr64QgdZyy7laL2czt21u35de8pr0WWk4vuR4k0bJojQ4cr/pub?output=csv"
@@ -32,7 +32,9 @@ const App = () => {
   return (
     <div>
       <h1>CSV Data</h1>
-      {/* <pre>{JSON.stringify(csvData, null, 2)}</pre> */}
+      <h1 className="text-5xl text-sky-600 font-bold underline">
+      Tailwind testing
+    </h1>
       <LanguageSelector onLanguageChange={(lang) => setLanguage(lang as LanguageType)}/>
       <Menu data={csvData} category={category} language={language} />
     </div>
